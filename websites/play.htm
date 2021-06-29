@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+<style>
+    label {
+        font-size: 50%;
+        font-family: Bahnschrift SemiBold;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background: khaki;
+        font-weight: 550;
+        border-radius: 11px;
+    }
+
+    button {
+        background: pink;
+        padding: 2px 6px;
+        border-radius: 5px;
+    }
+
+    center {
+        font-family: aparajit;
+    }
+
+    body {
+        background-image: linear-gradient(to left, #e0e0e0, blanchedalmond);
+        MARGIN: 5%;
+    }
+</style>
+
+<head>
+    <title>Javascript Program</title>
+</head>
+
+<body>
+    <hr><h1 align="center"> HTML TEXT FORMATTING PAGE </h1>
+    <center>
+        Choose any of the following buttons to see the various HTML text formatting features.<br> The below text is a plain text and on clicking any of the following buttons it willl display the same text in the choosen format!
+        <h6>
+            HTML TEXT FORMATTING. <br> NOTE: The text looks same in the following cases, but their syntax do differ.
+            <br>Bold <--> Strong || Underlined <--> Inserted || Emphasized <--> Italic || Strike <--> Deleted
+        </h6><hr>
+        <button onclick="bold()"> Bold text </button>
+        <button onclick="strong()"> Strong text </button>
+        <button onclick="italic()"> Italic text </button>
+        <button onclick="under()"> Underlined text </button>
+        <button onclick="mono()"> Monospace text </button>
+        <button onclick="strike()"> Strike text </button>
+        <button onclick="emp()"> Emphasized text </button>
+        <button onclick="mark()"> Marked text </button><br>
+        <button onclick="small()"> Smaller text </button>
+        <button onclick="big()"> Big text </button>
+        <button onclick="insert()"> Inserted text </button>
+        <button onclick="sub()"> Subscript text </button>
+        <button onclick="sup()"> Superscript text </button>
+        <button onclick="dele()"> Deleted text </button>
+        <hr>
+    </center>
+    <center id="res"></center>
+</body>
+
+<script>
+    const x = "HTML TEXT FORMATTING."
+
+    function bold() {
+        document.getElementById("res").innerHTML = " BOLD TEXT:<br> <b>" + x + "</b><hr>";
+    }
+
+    function strong() {
+        document.getElementById("res").innerHTML = " STRONG TEXT:<br> <strong>" + x + "</strong><hr>";
+    }
+
+    function under() {
+        document.getElementById("res").innerHTML = " UNDERLINED TEXT:<br> <u>" + x + "</u><hr>";
+    }
+
+    function italic() {
+        document.getElementById("res").innerHTML = " ITALIC TEXT:<br> <i>" + x + "</i><hr>";
+    }
+
+    function mono() {
+        document.getElementById("res").innerHTML = " MONOSPACE TEXT:<br> <tt>" + x + "</tt><hr>";
+    }
+
+    function emp() {
+        document.getElementById("res").innerHTML = " EMPHASIZED TEXT: <br><em>" + x + "</em><hr>";
+    }
+
+    function strike() {
+        document.getElementById("res").innerHTML = " STRIKED TEXT: <br><strike>" + x + "</strike><hr>";
+    }
+
+    function mark() {
+        document.getElementById("res").innerHTML = " MARKED TEXT: <br><mark>" + x + "</mark><hr>";
+    }
+
+    function small() {
+        document.getElementById("res").innerHTML = " SMALL TEXT: <br><small>" + x + "</small><hr>";
+    }
+
+    function big() {
+        document.getElementById("res").innerHTML = " BIG TEXT: <br><big>" + x + "</big><hr>";
+    }
+
+    function insert() {
+        document.getElementById("res").innerHTML = " INSERTED TEXT: <br><ins>" + x + "</ins><hr>";
+    }
+
+    function sub() {
+        document.getElementById("res").innerHTML = " SUBSCRIPT TEXT: <br><sub>" + x + "</sub><hr>";
+    }
+
+    function sup() {
+        document.getElementById("res").innerHTML = " SUPERSCRIPT TEXT: <br><sup>" + x + "</sup><hr>";
+    }
+
+    function dele() {
+        document.getElementById("res").innerHTML = " DELETED TEXT: <br><del>" + x + "</del> <hr>";
+    }
+</script>
+
+</html>
